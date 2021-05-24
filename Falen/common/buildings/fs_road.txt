@@ -1,0 +1,94 @@
+road_01 = {
+	construction_time = 1
+	cost_gold = 0
+	type_icon = "icon_building_hunting_grounds.dds"
+	can_construct_potential = {
+		building_road_requirement_terrain = yes #duchy 건물 부분 참고하셈 웬만해선 yes
+	}
+	
+	province_modifier = {
+ 	    monthly_income = 0 #교체 해도 됌 수입 창출
+	    hostile_raid_time = 0 #적대적 약탈 시간 단축
+	    build_speed = 0.05 #건축 시간 단축
+	    build_gold_cost = 0.05 #건축 비용 단축
+	    movement_speed = -0.02 #이속 조정. 현재 적용된 것이 현지화-로컬라이즈되어서 보이긴 하지만 프로빈스가 다 완성되어 있지 않아 확인어려움.
+	}
+	
+	next_building = road_02  #해당 형식을 지키며 바꾸셈
+}
+
+road_02 = {
+	construction_time = 150
+	cost_gold = 35
+	type_icon = "icon_building_hunting_grounds.dds"
+	can_construct_potential = {
+		building_road_requirement_terrain = yes #duchy 건물 부분 참고하셈 웬만해선 yes
+	}
+	
+	province_modifier = {
+ 	    monthly_income = 0 # 수입 창출
+	    hostile_raid_time = 0 #적대적 약탈 시간 단축
+	    build_speed = 0.15 #건축 시간 단축
+	    build_gold_cost = 0.15 #건축 비용 단축
+	    movement_speed = 0 #이속 조정.
+	}
+	
+	next_building = road_03  #해당 형식을 지키며 바꾸셈
+}
+
+road_03 = {
+	construction_time = 275
+	cost_gold = 85
+	type_icon = "icon_building_hunting_grounds.dds"
+	can_construct_potential = {
+		building_road_requirement_terrain = yes #duchy 건물 부분 참고하셈 웬만해선 yes
+	}
+	
+	province_modifier = {
+ 	    monthly_income = -0.2 # 수입 창출
+	    hostile_raid_time = -0.015 #적대적 약탈 시간 단축
+	    build_speed = -0.05 #건축 시간 단축
+	    build_gold_cost = -0.05 #건축 비용 단축
+	    movement_speed = 0.015 #이속 조정.
+	}
+	
+	next_building = road_04 #해당 형식을 지키며 바꾸셈
+}
+
+road_04 = {
+	construction_time = 345
+	cost_gold = 140
+	type_icon = "icon_building_hunting_grounds.dds"
+	can_construct_potential = {
+		building_road_requirement_terrain = yes #duchy 건물 부분 참고하셈 웬만해선 yes
+	}
+	
+	province_modifier = {
+ 	    monthly_income = -0.35 # 수입 창출
+	    hostile_raid_time = -0.02 #적대적 약탈 시간 단축
+	    build_speed = -0.75 #건축 시간 단축
+	    build_gold_cost = -0.75 #건축 비용 단축
+	    movement_speed = 0.025 #이속 조정.
+	}
+	
+	next_building = road_05 #해당 형식을 지키며 바꾸셈
+}
+#부족정은 이제부터 금지
+road_05 = {
+	construction_time = 430
+	cost_gold = 200
+	type_icon = "icon_building_hunting_grounds.dds"
+	can_construct_potential = {
+		building_road_requirement_terrain = yes #duchy 건물 부분 참고하셈 웬만해선 yes
+	}
+	
+	province_modifier = {
+ 	    monthly_income = -0.5 # 수입 창출
+	    hostile_raid_time = -0.035 #적대적 약탈 시간 단축
+	    build_speed = -0.1 #건축 시간 단축
+	    build_gold_cost = -0.1 #건축 비용 단축
+	    movement_speed = 0.04 #이속 조정.
+	}
+	
+	next_building = road_06 #해당 형식을 지키며 바꾸셈
+}

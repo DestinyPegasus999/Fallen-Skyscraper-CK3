@@ -1,0 +1,35 @@
+#식민지홀딩
+colony_01 = {
+    construction_time = 535
+	cost_gold = 125
+	
+	type_icon = "icon_building_hunting_grounds.dds"
+	asset = {
+		type = pdxmesh
+		names = {
+			"colony_01_mesh"
+			"colony_01_b_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 0 } }
+	}
+	
+	flag = colony
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+		
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal_holding_in_county = no
+	}
+	
+	levy = 150
+	garrison = 150
+	
+	province_modifier = {
+		monthly_income = 1.75
+		fort_level = 1.5
+	}
+}
